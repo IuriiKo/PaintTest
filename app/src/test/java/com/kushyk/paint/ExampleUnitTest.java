@@ -1,4 +1,4 @@
-package com.kushyk.progforcetest;
+package com.kushyk.paint;
 
 import org.junit.Test;
 

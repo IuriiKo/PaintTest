@@ -1,4 +1,4 @@
-package com.kushyk.progforcetest;
+package com.kushyk.paint;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
