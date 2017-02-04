@@ -1,4 +1,16 @@
 <resources>
-    <string name="app_name">ProgForceTest</string>
-    <string name="title_activity_list">ListActivity</string>
+    <string name="app_name">Paint</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="success_save_image">Image save success</string>
+    <string name="size_2">2</string>
+    <string name="size_4">4</string>
+    <string name="size_8">8</string>
+    <string name="size_16">16</string>
+    <string name="size_24">24</string>
+    <string name="cant_save_image">Can\'t save image</string>
+    <string name="need_permission">Need permission</string>
+    <string name="permission_explane">Enable permission to save file</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">"Cancel "</string>
+    <string name="cant_load_image">Can\'t load image</string>
 </resources>

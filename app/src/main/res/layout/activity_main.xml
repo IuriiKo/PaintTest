@@ -11,8 +11,55 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kushyk.paint.ui.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <com.kushyk.paint.ui.view.PaintView
+        android:id="@+id/canvasView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/pencilAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pencil"
+            />
+        <Button
+            android:id="@+id/clearAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            />
+        <Button
+            android:id="@+id/previousAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="previous"
+            />
+        <Button
+            android:id="@+id/chooseColorAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="color"
+            />
+        <Button
+            android:id="@+id/sizeAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="size"
+            />
+        <Button
+            android:id="@+id/getImageAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="getImage"
+            />
+        <Button
+            android:id="@+id/saveImageAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saveImage"
+            />
+    </LinearLayout>
 </RelativeLayout>
