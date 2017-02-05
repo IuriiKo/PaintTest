@@ -5,61 +5,136 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kushyk.paint.ui.MainActivity">
 
     <com.kushyk.paint.ui.view.PaintView
         android:id="@+id/canvasView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/previousAction"
+        android:layout_width="@dimen/menu_item_size"
+        android:layout_height="@dimen/menu_item_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/cyan_circle"
+        android:contentDescription="previous"
+        android:padding="8dp"
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical">
-        <Button
+
+        <ImageView
             android:id="@+id/pencilAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="pencil"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="pencil"
+            android:padding="8dp"
+            android:src="@drawable/ic_edit_white_24dp"
             />
-        <Button
+
+        <ImageView
+            android:id="@+id/squareAction"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="square"
+            android:padding="8dp"
+            android:src="@drawable/square_white_24dp"
+            />
+
+        <ImageView
+            android:id="@+id/circleAction"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="circle"
+            android:padding="8dp"
+            android:src="@drawable/circle_white_24dp"
+            />
+
+        <ImageView
+            android:id="@+id/lineAction"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="line"
+            android:padding="8dp"
+            android:src="@drawable/line_white_24dp"
+            />
+
+        <ImageView
+            android:id="@+id/stretchAction"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:contentDescription="stretch"
+            android:padding="3dp"
+            android:src="@drawable/ic_eraser"
+            />
+
+        <ImageView
             android:id="@+id/clearAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clear"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="Clear"
+            android:padding="10dp"
+            android:src="@drawable/trash"
             />
-        <Button
-            android:id="@+id/previousAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="previous"
-            />
-        <Button
+
+        <ImageView
             android:id="@+id/chooseColorAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="color"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:src="@drawable/ic_circle"
             />
+
         <Button
             android:id="@+id/sizeAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="size"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="size"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
             />
-        <Button
+
+        <ImageView
             android:id="@+id/getImageAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="getImage"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="getImage"
+            android:padding="8dp"
+            android:src="@drawable/ic_cloud_download_white_24dp"
             />
-        <Button
+
+        <ImageView
             android:id="@+id/saveImageAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="saveImage"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:background="@drawable/cyan_circle"
+            android:contentDescription="saveImage"
+            android:padding="8dp"
+            android:src="@drawable/ic_cloud_upload_white_24dp"
             />
+
     </LinearLayout>
 </RelativeLayout>

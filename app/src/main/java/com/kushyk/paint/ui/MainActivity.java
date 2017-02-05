@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -48,6 +49,9 @@ public class MainActivity extends BaseActivity implements ColorPickerDialogListe
     @BindView(R.id.sizeAction)
     Button sizeAction;
 
+    @BindView(R.id.chooseColorAction)
+    ImageView chooseColorAction;
+
     private PopupMenu sizePopUpMenu;
 
     @Override
@@ -62,6 +66,7 @@ public class MainActivity extends BaseActivity implements ColorPickerDialogListe
 
     private void initPainManager() {
         canvasView.setManager(App.getManager());
+        chooseColorAction.setColorFilter(App.getManager().getCurrentColor());
     }
 
     private void initSizeView() {
@@ -188,6 +193,7 @@ public class MainActivity extends BaseActivity implements ColorPickerDialogListe
 
     @Override
     public void onColorSelected(int dialogId, @ColorInt int color) {
+        chooseColorAction.setColorFilter(color);
         App.getManager().setColor(color);
     }
 
