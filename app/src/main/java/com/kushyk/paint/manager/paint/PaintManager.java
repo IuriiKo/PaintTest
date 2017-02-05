@@ -31,6 +31,7 @@ public class PaintManager {
     private BasePathManager manager;
     private Path tempPath;
     private boolean saveCanvas;
+    private int currentColor = Color.CYAN;
 
     public PaintManager() {
         this(
@@ -42,6 +43,7 @@ public class PaintManager {
     }
 
     public PaintManager(Paint paint, BaseCash cash, BasePathManager manager) {
+        currentColor = paint.getColor();
         this.paint = paint;
         this.cash = cash;
         this.manager = manager;
@@ -121,10 +123,19 @@ public class PaintManager {
     }
 
     public void setColor(int color) {
+        this.currentColor = color;
+        paint = PaintUtil.initPaintOptions(color,paint.getStrokeWidth());
+    }
+
+    public void setStretchColor(int color) {
         paint = PaintUtil.initPaintOptions(color,paint.getStrokeWidth());
     }
 
     public boolean cashIsEmpty() {
         return cash.getCash().isEmpty();
+    }
+
+    public int getCurrentColor() {
+        return currentColor;
     }
 }

@@ -13,9 +13,9 @@ public abstract class BasePathManager {
 
     public abstract Path startPaint(MotionEvent event);
 
-    public abstract Path endPaint(MotionEvent event);
-
     public abstract Path paint(MotionEvent event);
+
+    public abstract Path endPaint(MotionEvent event);
 
     public void resetPath() {
         path = new Path();

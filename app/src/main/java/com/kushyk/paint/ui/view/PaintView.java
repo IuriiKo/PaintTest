@@ -19,10 +19,9 @@ import com.kushyk.paint.manager.paint.PaintManager;
 
 public class PaintView extends View {
     public static final String LOG_TAG = PaintView.class.getSimpleName();
-    private static final int BACKGROUND_COLOR = Color.WHITE;
+    public static final int BACKGROUND_COLOR = Color.WHITE;
     private PaintManager manager;
     private boolean clearCanvas;
-    private int positionBefore;
     private Bitmap bitmap;
     private boolean revert;
     private Paint bitmapPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -80,8 +79,6 @@ public class PaintView extends View {
             } else if (bitmap != null){
                 bitmap = null;
             }
-            invalidate();
-            return;
         }
 
         canvas.drawColor(BACKGROUND_COLOR);
@@ -104,7 +101,7 @@ public class PaintView extends View {
         invalidate();
     }
 
-    public void restoreTo() {
+    public void revertTo() {
         this.revert = true;
         invalidate();
     }

@@ -4,11 +4,10 @@ import android.graphics.Path;
 import android.view.MotionEvent;
 
 /**
- * Created by Iurii Kushyk on 04.02.2017.
+ * Created by Iurii Kushyk on 05.02.2017.
  */
 
-public class PencilManager extends BasePathManager {
-
+public class StratchManager extends BasePathManager {
     @Override
     public Path startPaint(MotionEvent event) {
         path.moveTo(event.getX(), event.getY());
